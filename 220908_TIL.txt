@@ -22,4 +22,39 @@
 - tracking
   - 로컬 repo를 기준으로 원격 repo를 연결하는것
 
-- 어렵다
+===========================================================================================
+Choi's git 
+
+전부 로컬에서 작동
+
+git init : .git을 생성
+
+.git : git skeleton = git의 뼈대 / commit object를 포함한 변경된 내용들이 전부 들어있음
+
+touch a.txt : 파일을 생성한다.(간지용. 컴퓨터에서 새파일 만드는것과 같은 작용)
+ls : 해당 폴더의 전체 내용물 보기
+
+cd .. : 상위 폴더로 가기
+
+cd 폴더이름 : 해당 폴더로 들어가기
+
+git status : 현재 파일의 상태(untracked(발견되지않음/빨간글씨/.git이 인식을 못함)
+- 4가지 상태 : untracked, staged, committed (= tracked)
+
+git add a.text(파일이름) 
+: untracked -> staged 
+
+git add .
+: 모든 파일을 staged(대기상태)로 넘겨줌 
+
+:.git에 발견은 되었지만 저장이 되지 않은상태 = staged = to be committed
+
+git commit -m "작성할 commit메세지 넣기" 
+:commit하는 동시에  commit메세지를 같이 저장
+
+git log 
+: commit 기록을 보여줌/ commit object(commit의 주소(노란글씨))/ Author,Date,Commit message = 누가 언제 + 커밋메세지
+
+git log -- oneline : git log내용을 한줄로 깨끗하게 보여줌
+
+=================================================================
